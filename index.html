@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKP Praktis Nakes - Layanan Administrasi Digital Tenaga Kesehatan</title>
+    <meta name="description" content="Layanan asisten administrasi digital untuk tenaga kesehatan Indonesia. Bantu input SKP dan administrasi SIP dengan mudah, aman, dan terpercaya.">
+    <meta name="keywords" content="SKP, SIP, tenaga kesehatan, administrasi, pelataran sehat, satusehat, nakes, dokter, perawat, bidan">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6285175178591?text=Halo%20SKP%20Praktis%20Nakes,%20saya%20ingin%20konsultasi%20tentang%20layanan%20administrasi%20SKP%20dan%20SIP" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       onclick="trackWhatsAppClick('floating_button')">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">🩺</div>
+                    <div class="logo-text">SKP Praktis Nakes</div>
+                </a>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link active">Beranda</a>
+                    <a href="#services" class="nav-link">Layanan</a>
+                    <a href="#how-it-works" class="nav-link">Cara Kerja</a>
+                    <a href="#testimonials" class="nav-link">Testimoni</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                    <a href="daerah.html" class="nav-link">Daerah Terdaftar</a>
+                    <a href="https://wa.me/6285175178591?text=Halo%20SKP%20Praktis%20Nakes,%20saya%20ingin%20konsultasi%20gratis"  
+                       class="nav-button" target="_blank" onclick="trackWhatsAppClick('navbar_button')">Konsultasi Gratis</a>
+                </div>
+                
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">Fokus pada Pasien, Biarkan Kami Rapikan Portofolio SKP Anda.</h1>
+                <p class="hero-subtitle">Layanan Asistensi Administrasi Digital Resmi untuk Tenaga Kesehatan Indonesia. Solusi Pelataran Sehat Hijau tanpa menyita waktu istirahat Anda.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary pulse">Bantu Saya Sekarang</a>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcG4UvRZQkHYNWoQSzR2TDLEK6DIymU-RUbLHR2XoUo4rcWjD3KAKFII2Q4H_fdN2INKOv-ZAYT1bZ/pubhtml?gid=917584076&single=true" 
+                       class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-chart-line"></i> Lihat Progress
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">500+</div>
+                        <div class="stat-text">Tenaga Kesehatan Terbantu</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="98">98%</div>
+                        <div class="stat-text">Kepuasan Pelanggan</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="24">24/7</div>
+                        <div class="stat-text">Layanan Konsultasi</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+                <div class="image-placeholder">
+                    <div class="doctor-illustration">
+                        <div class="doctor-avatar">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="laptop-screen">
+                            <div class="screen-content">
+                                <div class="status-indicator green"></div>
+                                <span class="status-text">Pelataran Sehat: HIJAU</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Problem Section -->
+    <section class="section problem-section" id="problem">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Lelah Pulang Dinas Masih Harus Input Data?</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Kami memahami tantangan yang dihadapi tenaga kesehatan dalam administrasi digital</p>
+            
+            <div class="problem-cards">
+                <div class="problem-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="problem-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 class="problem-title">Sistem Error/Down</h3>
+                    <p class="problem-description">Sering mengalami kendala teknis saat mengakses platform Pelataran Sehat atau SATUSEHAT di luar jam kerja.</p>
+                </div>
+                
+                <div class="problem-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="problem-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="problem-title">Tidak Paham Regulasi Baru</h3>
+                    <p class="problem-description">Kesulitan memahami aturan dan persyaratan terbaru untuk pengisian SKP dan perpanjangan SIP.</p>
+                </div>
+                
+                <div class="problem-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="problem-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="problem-title">Waktu Habis Tersita</h3>
+                    <p class="problem-description">Waktu berharga untuk istirahat dan keluarga terkuras untuk urusan administrasi yang rumit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Solution Section -->
+    <section class="section solution-section" id="solution">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Kami Bukan Joki, Kami Partner Profesional Anda</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Sebagai asisten administrasi digital, kami memastikan semua proses dilakukan dengan standar profesional tertinggi</p>
+            
+            <div class="solution-features">
+                <div class="feature-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">100% Data Aman & Rahasia (NDA)</h3>
+                        <p class="feature-description">Kami menggunakan enkripsi data dan menandatangani perjanjian kerahasiaan (NDA) untuk melindungi informasi pribadi dan profesional Anda.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-right" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Input Manual & Teliti (Human Verified)</h3>
+                        <p class="feature-description">Setiap data diverifikasi oleh tim ahli kami sebelum diinput, memastikan akurasi dan kesesuaian dengan regulasi terkini.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-right" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3 class="feature-title">Garansi Sampai Hijau/Terbit</h3>
+                        <p class="feature-description">Kami memberikan garansi hingga status Pelataran Sehat berubah menjadi HIJAU atau sampai SIP Anda terbit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Layanan Administrasi Digital Kami</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Pilih paket layanan sesuai kebutuhan Anda</p>
+            
+            <div class="services-cards">
+                <div class="service-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="service-title">Review Akun</h3>
+                    </div>
+                    <div class="service-body">
+                        <p class="service-description">Audit menyeluruh terhadap akun Pelataran Sehat Anda untuk mengidentifikasi masalah dan memberikan rekomendasi perbaikan.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Analisis kelengkapan dokumen</li>
+                            <li><i class="fas fa-check"></i> Identifikasi kesalahan data</li>
+                            <li><i class="fas fa-check"></i> Rekomendasi tindakan perbaikan</li>
+                            <li><i class="fas fa-check"></i> Laporan detail hasil audit</li>
+                        </ul>
+                    </div>
+                    <div class="service-footer">
+                        <a href="https://wa.me/6285175178591?text=Halo%20SKP%20Praktis%20Nakes,%20saya%20ingin%20konsultasi%20tentang%20layanan%20Review%20Akun" 
+                           class="btn btn-service" target="_blank" onclick="trackWhatsAppClick('review_akun')">
+                           Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3 class="service-title">Input SKP</h3>
+                    </div>
+                    <div class="service-body">
+                        <p class="service-description">Layanan input SKP per sertifikat atau kegiatan dengan verifikasi ketat untuk memastikan poin SKP Anda tercatat dengan benar.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Input data sertifikat kegiatan</li>
+                            <li><i class="fas fa-check"></i> Verifikasi kelayakan SKP</li>
+                            <li><i class="fas fa-check"></i> Upload dokumen pendukung</li>
+                            <li><i class="fas fa-check"></i> Monitoring status input</li>
+                        </ul>
+                    </div>
+                    <div class="service-footer">
+                        <a href="https://wa.me/6285175178591?text=Halo%20SKP%20Praktis%20Nakes,%20saya%20ingin%20konsultasi%20tentang%20layanan%20Input%20SKP"
+                           class="btn btn-service" target="_blank" onclick="trackWhatsAppClick('input_skp')">
+                           Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-card featured" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-badge">BEST SELLER</div>
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="service-title">All-in One SIP</h3>
+                    </div>
+                    <div class="service-body">
+                        <p class="service-description">Layanan terima beres mulai dari persiapan dokumen, input SKP, hingga pengajuan perpanjangan SIP sampai diterbitkan.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Persiapan dokumen lengkap</li>
+                            <li><i class="fas fa-check"></i> Input dan verifikasi SKP</li>
+                            <li><i class="fas fa-check"></i> Pengajuan perpanjangan SIP</li>
+                            <li><i class="fas fa-check"></i> Monitoring sampai terbit</li>
+                            <li><i class="fas fa-check"></i> Garansi sampai SIP terbit</li>
+                        </ul>
+                    </div>
+                    <div class="service-footer">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScVk4D_ibsfmgRqbRfJZ8hzjAEiKNaXv6Aw-U0Pbbf34Y3D1A/viewform" 
+                           class="btn btn-service-featured" target="_blank">
+                           <i class="fas fa-edit"></i> Daftar Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section class="section how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Cara Kerja Layanan Kami</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Proses yang transparan dan terstruktur untuk kenyamanan Anda</p>
+            
+            <div class="timeline">
+                <div class="timeline-step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Konsultasi Awal</h3>
+                        <p class="step-description">Anda mengisi formulir konsultasi untuk kami memahami kebutuhan spesifik Anda.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Analisis & Penawaran</h3>
+                        <p class="step-description">Kami menganalisis kebutuhan Anda dan mengirimkan penawaran layanan yang sesuai.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step" data-aos="fade-right" data-aos-delay="400">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Perjanjian Kerja</h3>
+                        <p class="step-description">Setelah menyetujui penawaran, kami membuat perjanjian kerja dan NDA untuk keamanan data.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step" data-aos="fade-right" data-aos-delay="500">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Pelaksanaan Layanan</h3>
+                        <p class="step-description">Tim ahli kami mulai bekerja dengan transparansi penuh melalui dashboard progress.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-step" data-aos="fade-right" data-aos-delay="600">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Selesai & Garansi</h3>
+                        <p class="step-description">Setelah selesai, Anda mendapatkan hasil dan garansi layanan sesuai kesepakatan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Dipercaya oleh 500+ Nakes Se-Indonesia</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Apa kata tenaga kesehatan yang telah menggunakan layanan kami</p>
+            
+            <div class="testimonial-cards">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">dr. A, Sp.PD</h4>
+                            <p class="testimonial-role">Dokter Spesialis Penyakit Dalam</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-text">"Sangat amanah dan profesional. Setelah bertahun-tahun kesulitan dengan input SKP, akhirnya semua tertata rapi. Layanan yang sangat direkomendasikan untuk sesama dokter."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="testimonial-date">Januari 2024</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Ners. B, S.Kep</h4>
+                            <p class="testimonial-role">Perawat ICU</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-text">"Cepat dan tepat waktu. Sebagai perawat dengan jadwal shift yang padat, layanan ini sangat membantu. Data aman dan proses transparan melalui dashboard progress."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="testimonial-date">Februari 2024</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <div class="testimonial-info">
+                            <h4 class="testimonial-name">Bidan C, S.Keb</h4>
+                            <p class="testimonial-role">Bidan Puskesmas</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p class="testimonial-text">"Legal dan terpercaya. Proses perpanjangan SIP saya berjalan lancar, semua dokumen sesuai regulasi terbaru. Tidak perlu khawatir dengan keamanan data pribadi."</p>
+                    </div>
+                    <div class="testimonial-footer">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="testimonial-date">Maret 2024</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="trust-indicators" data-aos="fade-up" data-aos-delay="500">
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4 class="trust-title">Data Terlindungi</h4>
+                        <p class="trust-description">Semua data dilindungi dengan enkripsi dan perjanjian kerahasiaan</p>
+                    </div>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4 class="trust-title">Legal & Resmi</h4>
+                        <p class="trust-description">Beroperasi sebagai konsultan administrasi digital yang legal</p>
+                    </div>
+                </div>
+                
+                <div class="trust-item">
+                    <div class="trust-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="trust-content">
+                        <h4 class="trust-title">Support 24/7</h4>
+                        <p class="trust-description">Tim support siap membantu kapan saja Anda membutuhkan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="section faq-section" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Pertanyaan yang Sering Diajukan</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Temukan jawaban untuk pertanyaan umum tentang layanan kami</p>
+            
+            <div class="faq-container">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>Apakah layanan ini legal dan sesuai aturan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sangat legal. Kami bertindak sebagai asisten administrasi digital yang membantu input data Anda, sama seperti sekretaris atau asisten pribadi. Data tetap milik Anda sepenuhnya, dan kami hanya membantu proses teknis pengisian sesuai dengan data dan dokumen yang Anda sediakan. Semua proses dilakukan dengan mengikuti regulasi yang berlaku.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <h3>Apakah data pribadi dan profesional saya aman?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Keamanan data adalah prioritas utama kami. Kami menggunakan:
+                           <br>1. Enkripsi data tingkat tinggi
+                           <br>2. Perjanjian Kerahasiaan (NDA) yang mengikat secara hukum
+                           <br>3. Sistem penyimpanan data yang aman
+                           <br>4. Akses data terbatas hanya untuk tim yang berwenang
+                           <br>5. Opsi penghapusan data setelah proses selesai
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara memantau progress pekerjaan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Anda dapat memantau progress pekerjaan melalui dashboard online yang kami sediakan. Setiap tahap pekerjaan akan diupdate secara real-time. Selain itu, Anda juga akan mendapatkan notifikasi via WhatsApp atau email pada setiap milestone penting. Akses dashboard progress: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRcG4UvRZQkHYNWoQSzR2TDLEK6DIymU-RUbLHR2XoUo4rcWjD3KAKFII2Q4H_fdN2INKOv-ZAYT1bZ/pubhtml?gid=917584076&single=true" target="_blank">KLIK DI SINI</a></p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <h3>Berapa lama proses pengerjaan layanan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Waktu pengerjaan bervariasi tergantung jenis layanan dan kompleksitas data:
+                           <br>• Review Akun: 2-3 hari kerja
+                           <br>• Input SKP: 3-7 hari kerja per sertifikat
+                           <br>• All-in One SIP: 14-30 hari kerja (tergantung kelengkapan dokumen)
+                           <br><br>Timeline yang lebih detail akan disampaikan setelah analisis kebutuhan awal.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara mulai menggunakan layanan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Anda dapat memulai dengan 3 langkah mudah:
+                           <br>1. Isi formulir konsultasi gratis di: <a href="https://docs.google.com/forms/d/e/1FAIpQLScVk4D_ibsfmgRqbRfJZ8hzjAEiKNaXv6Aw-U0Pbbf34Y3D1A/viewform" target="_blank">Formulir Pendaftaran</a>
+                           <br>2. Tim kami akan menghubungi Anda dalam 1x24 jam untuk analisis kebutuhan
+                           <br>3. Setelah kesepakatan, kami mulai proses kerja dengan transparansi penuh
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2 class="cta-title">Siap Merapikan Administrasi Digital Anda?</h2>
+                <p class="cta-subtitle">Konsultasi gratis dengan tim ahli kami. Diskusikan kebutuhan spesifik Anda tanpa biaya.</p>
+                <div class="cta-buttons">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScVk4D_ibsfmgRqbRfJZ8hzjAEiKNaXv6Aw-U0Pbbf34Y3D1A/viewform" 
+                       class="btn btn-primary btn-large" target="_blank">
+                       <i class="fas fa-edit"></i> Isi Formulir 
+                    </a>
+                    <a href="https://wa.me/6285175178591?text=Halo%20SKP%20Praktis%20Nakes,%20saya%20ingin%20konsultasi%20gratis" 
+                       class="btn btn-secondary btn-large" target="_blank" onclick="trackWhatsAppClick('cta_button')">
+                       <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+                    </a>
+                </div>
+                <p class="cta-note">*Konsultasi awal tidak mengikat. Data Anda terlindungi dengan kerahasiaan penuh.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🩺</span>
+                        <span class="logo-text">SKP Praktis Nakes</span>
+                    </a>
+                    <p class="footer-description">Layanan Asistensi Administrasi Digital Resmi untuk Tenaga Kesehatan Indonesia. Partner profesional Anda dalam pengelolaan SKP dan SIP.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Layanan</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Review Akun</a></li>
+                        <li><a href="#services">Input SKP</a></li>
+                        <li><a href="#services">All-in One SIP</a></li>
+                        <li><a href="#how-it-works">Cara Kerja</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Kebijakan Privasi</a></li>
+                        <li><a href="terms.html">Syarat & Ketentuan</a></li>
+                        <li><a href="agreement.html">Perjanjian Layanan</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Kontak</h4>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-envelope"></i> skppraktis@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +62 851-7517-8591</li>
+                        <li><i class="fab fa-whatsapp"></i> +62 851-7517-8591</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; <span id="currentYear">2024</span> SKP Praktis Nakes. Hak Cipta Dilindungi.</p>
+                <p class="disclaimer">SKP Praktis Nakes adalah layanan asisten administrasi digital, bukan perantara resmi pemerintah. Semua proses mengikuti regulasi yang berlaku.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
