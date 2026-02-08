@@ -1,0 +1,87 @@
+﻿{
+  "daerah": [
+    {
+      "id": 1,
+      "nama": "Aceh Tenggara",
+      "provinsi": "ACEH",
+      "status": "aktif",
+      "integrasi": 95,
+      "nakes_terdaftar": 150
+    },
+    {
+      "id": 2,
+      "nama": "Aceh Besar",
+      "provinsi": "ACEH",
+      "status": "aktif",
+      "integrasi": 98,
+      "nakes_terdaftar": 300
+    },
+    {
+      "id": 3,
+      "nama": "Kota Banda Aceh",
+      "provinsi": "ACEH",
+      "status": "aktif",
+      "integrasi": 100,
+      "nakes_terdaftar": 500
+    },
+    {
+      "id": 4,
+      "nama": "Badung",
+      "provinsi": "BALI",
+      "status": "aktif",
+      "integrasi": 97,
+      "nakes_terdaftar": 400
+    },
+    {
+      "id": 5,
+      "nama": "Bandung",
+      "provinsi": "JAWA BARAT",
+      "status": "aktif",
+      "integrasi": 99,
+      "nakes_terdaftar": 1200
+    },
+    {
+      "id": 6,
+      "nama": "Kota Bandung",
+      "provinsi": "JAWA BARAT",
+      "status": "aktif",
+      "integrasi": 100,
+      "nakes_terdaftar": 2000
+    },
+    {
+      "id": 7,
+      "nama": "Semarang",
+      "provinsi": "JAWA TENGAH",
+      "status": "aktif",
+      "integrasi": 98,
+      "nakes_terdaftar": 1500
+    },
+    {
+      "id": 8,
+      "nama": "Surabaya",
+      "provinsi": "JAWA TIMUR",
+      "status": "aktif",
+      "integrasi": 100,
+      "nakes_terdaftar": 3000
+    },
+    {
+      "id": 9,
+      "nama": "Makassar",
+      "provinsi": "SULAWESI SELATAN",
+      "status": "aktif",
+      "integrasi": 95,
+      "nakes_terdaftar": 800
+    },
+    {
+      "id": 10,
+      "nama": "Jayapura",
+      "provinsi": "PAPUA",
+      "status": "aktif",
+      "integrasi": 90,
+      "nakes_terdaftar": 300
+    }
+  ],
+  "total_daerah": 157,
+  "total_provinsi": 34,
+  "update_terakhir": "$(Get-Date -Format "yyyy-MM-dd")"
+}
